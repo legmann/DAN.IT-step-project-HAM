@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/swiper.css">
+	<title>The Ham Step Project</title>
+</head>
+
+<body>
+
+	<svg display="none">
+		<defs>
+			<g id="img-shape-4">
+				<path xmlns="http://www.w3.org/2000/svg" fill="white" fill-rule="evenodd"
+					d="M81.3619 6.36138H19.1883V17.5371H13.7102V0.996094H86.8412V31.0806H81.3619V6.36138ZM38.7969 76.9963H-0.00012207V19.9742H38.7969V76.9963ZM18.3481 72.3027C18.3481 73.3102 19.1842 74.1379 20.2168 74.1379C21.2504 74.1379 22.0905 73.3102 22.0877 72.3027C22.0877 71.294 21.2504 70.4724 20.2168 70.4724C19.1842 70.4724 18.3481 71.294 18.3481 72.3027ZM33.1905 25.4691H5.61039V67.5417H33.1884L33.1905 25.4691ZM41.2974 42.8722H70.1105V48.2383H41.2974V42.8722ZM72.9427 76.1053V33.1624H98.9999V76.1053H72.9427ZM87.179 35.5573C87.179 35.2153 86.8981 34.9406 86.55 34.9406C86.2022 34.9406 85.9194 35.2132 85.9194 35.5573C85.9194 35.8947 86.2022 36.1761 86.55 36.1761C86.8981 36.1761 87.179 35.8947 87.179 35.5573ZM90.2978 37.0005H82.8024V37.5895H90.2978V37.0005ZM84.8004 72.776C84.8004 73.589 85.476 74.2515 86.3038 74.2515C87.132 74.2515 87.8075 73.589 87.8075 72.776C87.8075 71.9623 87.132 71.3047 86.3038 71.3047C85.4717 71.3047 84.8004 71.9669 84.8004 72.776ZM77.1238 69.2287C80.4788 69.256 88.0517 69.232 94.8189 69.194V39.6991L77.1238 39.7032V69.2287ZM41.2974 50.4337H49.2272H51.3127H70.1105V58.0513H41.2974V55.1116H60.6109V53.6865H41.2974V50.4337Z"
+					clip-rule="evenodd" />
+			</g>
+
+			<g id="img-shape-3">
+				<path xmlns="http://www.w3.org/2000/svg" fill="#18CFAB" fill-rule="evenodd"
+					d="M48 75.9973C48 77.6544 46.6582 78.9957 45 78.9957H15C13.3418 78.9957 11.9999 77.6544 11.9999 75.9973C11.9999 74.3384 13.3418 72.9964 15 72.9964H45C46.6582 72.9964 48 74.3384 48 75.9973ZM45 81.9966H15C13.3418 81.9966 11.9999 83.3373 11.9999 84.9966C11.9999 86.6559 13.3418 87.9959 15 87.9959H45C46.6582 87.9959 48 86.6559 48 84.9966C48 83.3373 46.6582 81.9966 45 81.9966ZM24 96.9959H35.9999C39.3164 96.9959 41.9999 94.3128 41.9999 90.9963H18C18 94.3128 20.6836 96.9959 24 96.9959ZM60 30.996C60 47.3082 50.1679 49.2066 48.3222 66.9959C48.3222 68.6547 46.9804 69.9968 45.3223 69.9968H14.6778C13.0194 69.9968 11.6776 68.6547 11.6776 66.9959H11.6718C9.83208 49.2066 0 47.3082 0 30.996C0 14.4265 13.4296 0.99585 30 0.99585C46.5702 0.99585 60 14.4265 60 30.996ZM42.1464 21.9966C7.27148 30.2459 24.1465 51.9968 24.1465 51.9968C24.1465 39.9957 32.959 37.1832 33.1464 37.5591C26.959 43.5592 24.1465 63.9962 24.1465 63.9962H30.1465C30.1465 63.9962 30.1465 57.9957 30.1465 51.9968C47.209 52.9336 42.1464 24.0578 42.1464 21.9966Z"
+					clip-rule="evenodd" />
+			</g>
+
+			<g id="img-shape-1">
+				<path xmlns="http://www.w3.org/2000/svg" fill="#18CFAB" fill-rule="evenodd"
+					d="M15.7001 35.9758L15.711 20.1276C15.711 18.2973 16.3969 16.5851 17.6508 15.3063C19.0439 13.8998 21.0372 13.0964 23.1377 13.0964C24.7774 13.0964 26.3529 13.607 27.5745 14.5157C29.0536 15.6215 29.9751 17.2903 30.1681 19.1958C30.1681 19.2387 31.0145 27.5048 31.7754 34.9035C37.1017 31.7399 40.6921 25.8915 40.6921 19.1958C40.6921 9.14305 32.6327 0.99585 22.6877 0.99585C12.7426 0.99585 4.68317 9.14305 4.68317 19.1958C4.67262 26.735 9.21663 33.2129 15.7001 35.9758ZM16.4184 95.8307C16.4184 97.0204 17.3829 97.996 18.5618 97.996H50.2408C51.4197 97.996 52.3841 97.0204 52.3841 95.8307V90.8662H16.4184V95.8307ZM54.6668 52.0204C56.6603 52.6693 57.9999 54.5434 57.9999 56.6562L57.9785 73.9249C57.9785 76.493 57.2923 79.0057 55.9956 81.2048L52.3628 87.4126H16.3969C6.38715 77.1633 1.30761 66.2341 0.535781 61.543C1.83582e-05 58.3245 2.21841 56.1703 4.68317 56.1703C6.08709 56.1703 7.57689 56.8623 8.69142 58.4757C9.04504 58.9973 9.43086 59.5596 9.85963 60.1767C13.0256 64.8124 16.2752 64.9095 17.7582 64.9538L17.8113 64.9553H17.8435C17.8867 64.9553 17.9402 64.9553 17.9829 64.943H18.0044C18.5187 64.8686 18.8939 64.4344 18.8939 63.9144L18.9154 20.1157C18.9045 17.6574 21.0479 16.3365 23.127 16.3365C24.9596 16.3365 26.7386 17.3643 26.9638 19.5324C26.9638 19.5761 29.7288 46.6039 29.7394 46.6894V46.7019H29.75C30.511 46.0182 31.7754 45.6188 33.2222 45.6188C33.7583 45.6188 34.3156 45.6724 34.8834 45.7794C36.716 46.1488 48.7191 50.0583 54.6668 52.0204Z"
+					clip-rule="evenodd" />
+			</g>
+
+			<g id="img-shape-2">
+				<path xmlns="http://www.w3.org/2000/svg" fill="white" fill-rule="evenodd"
+					d="M74.2944 0.996094L62.05 19.4152L49.3953 0.996094H74.2944ZM60.1059 23.6264H32.9431L46.5226 75.0264L60.1059 23.6264ZM33.85 20.6082H59.1972L46.5226 2.16009L33.85 20.6082ZM30.9976 19.4152L43.6511 0.996094H18.7541L30.9976 19.4152ZM43.645 75.9962L29.809 23.6264H-0.00012207L43.645 75.9962ZM0.0425019 20.6082H28.1569L15.9099 2.18567L0.0425019 20.6082ZM77.1165 2.22077L64.8923 20.6082H92.9573L77.1165 2.22077ZM63.2386 23.6264L49.4007 75.9908L93 23.6264H63.2386Z"
+					clip-rule="evenodd" />
+			</g>
+
+			<g id="img-shape-link-1">
+				<path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+					d="M13.9131 2.72817L12.0948 0.891285C11.2902 0.0808612 9.98305 0.0759142 9.17681 0.882615L7.15921 2.89256C6.35161 3.69885 6.34818 5.01032 7.15051 5.82074L8.30352 4.68897C8.18678 4.32836 8.33041 3.9153 8.61593 3.62946L9.89949 2.35187C10.3061 1.94624 10.9584 1.94913 11.3595 2.35434L12.4513 3.45805C12.8528 3.86283 12.8511 4.51713 12.447 4.92318L11.1634 6.20241C10.8918 6.47296 10.4461 6.62168 10.1002 6.52626L8.97094 7.65887C9.77453 8.47177 11.0803 8.47466 11.8889 7.66837L13.9039 5.65924C14.7141 4.85254 14.7167 3.53983 13.9131 2.72817ZM6.52613 10.0918C6.62191 10.4441 6.46857 10.8997 6.19093 11.1777L4.99227 12.3752C4.58074 12.7845 3.91595 12.7833 3.50671 12.369L2.39297 11.2475C1.98465 10.8349 1.98729 10.1633 2.39824 9.75473L3.59804 8.55769C3.89032 8.26607 4.31044 8.12025 4.67711 8.24375L5.83354 7.0715C5.01493 6.2462 3.68249 6.24207 2.86059 7.06324L0.915197 9.0042C0.0922615 9.8266 0.0883685 11.1629 0.90651 11.9886L2.75817 13.8618C3.57595 14.6846 4.90724 14.6912 5.73111 13.8701L7.67649 11.9287C8.49852 11.1054 8.5024 9.77166 7.68553 8.9443L6.52613 10.0918ZM6.25787 9.56307C5.98013 9.84189 5.53427 9.84105 5.26179 9.55812C4.98792 9.27434 4.9901 8.82039 5.26613 8.53993L8.59075 5.16109C8.86679 4.88227 9.31174 4.88311 9.58513 5.16398C9.86048 5.44569 9.85876 5.90088 9.5817 6.18299L6.25787 9.56307Z"
+					clip-rule="evenodd" />
+			</g>
+
+			<g id="img-link-2">
+				<path xmlns="http://www.w3.org/2000/svg" d="M24 0h-24v24h24v-24z" />
+			</g>
+
+			<g id="img-combined-shape-2474">
+				<path xmlns="http://www.w3.org/2000/svg" fill="#18CFAB" fill-rule="evenodd"
+					d="M9.65845 11.9026C14.9691 11.9026 19.2741 16.1757 19.2741 21.4484C19.2741 26.7195 14.9691 30.993 9.65845 30.993C4.34797 30.993 0.0429109 26.7195 0.0429109 21.4484L0 20.0841C0 9.54111 8.61007 0.993652 19.2312 0.993652V6.44727C15.562 6.44727 12.1124 7.86613 9.51792 10.4424C9.0185 10.9377 8.56269 11.466 8.15163 12.0211C8.64259 11.9451 9.14578 11.9026 9.65845 11.9026ZM34.3844 11.9026C39.6949 11.9026 43.9999 16.1757 43.9999 21.4484C43.9999 26.7195 39.6949 30.993 34.3844 30.993C29.0738 30.993 24.7687 26.7195 24.7687 21.4484L24.7258 20.0841C24.7258 9.54111 33.336 0.993652 43.957 0.993652V6.44727C40.2879 6.44727 36.8383 7.86613 34.2438 10.4424C33.7443 10.9377 33.2886 11.466 32.8774 12.0211C33.3685 11.9451 33.8715 11.9026 34.3844 11.9026Z"
+					clip-rule="evenodd" />
+			</g>
+
+			<g id="img-expand">
+				<path xmlns="http://www.w3.org/2000/svg" fill="#F8FCFE"
+					d="M0.700061 10C0.700061 10.1657 0.834376 10.3 1.00006 10.3L3.70006 10.3C3.86575 10.3 4.00006 10.1657 4.00006 10C4.00006 9.83431 3.86575 9.7 3.70006 9.7H1.30006V7.3C1.30006 7.13431 1.16575 7 1.00006 7C0.834376 7 0.700061 7.13431 0.700061 7.3L0.700061 10ZM3.78793 6.78787L0.787929 9.78787L1.21219 10.2121L4.21219 7.21213L3.78793 6.78787Z" />
+				<path xmlns="http://www.w3.org/2000/svg" fill="#F8FCFE"
+					d="M0.999864 0.700202C0.834179 0.700267 0.699917 0.834634 0.699982 1.00032L0.701042 3.70032C0.701107 3.866 0.835474 4.00027 1.00116 4.0002C1.16685 4.00014 1.30111 3.86577 1.30104 3.70008L1.3001 1.30008L3.7001 1.29914C3.86579 1.29908 4.00005 1.16471 3.99998 0.999024C3.99992 0.833338 3.86555 0.699077 3.69986 0.699141L0.999864 0.700202ZM4.21321 3.78681L1.21203 0.787986L0.787933 1.21242L3.78911 4.21124L4.21321 3.78681Z" />
+				<path xmlns="http://www.w3.org/2000/svg" fill="#F8FCFE"
+					d="M11.3001 1C11.3001 0.834315 11.1657 0.7 11.0001 0.7L8.30006 0.7C8.13438 0.7 8.00006 0.834315 8.00006 1C8.00006 1.16569 8.13438 1.3 8.30006 1.3H10.7001V3.7C10.7001 3.86569 10.8344 4 11.0001 4C11.1657 4 11.3001 3.86569 11.3001 3.7L11.3001 1ZM8.21219 4.21213L11.2122 1.21213L10.7879 0.787868L7.78793 3.78787L8.21219 4.21213Z" />
+				<path xmlns="http://www.w3.org/2000/svg" fill="#F8FCFE"
+					d="M11.0297 10.2727C11.1954 10.2712 11.3285 10.1357 11.327 9.97001L11.3026 7.27012C11.3011 7.10445 11.1656 6.97135 10.9999 6.97285C10.8342 6.97435 10.7011 7.10988 10.7026 7.27555L10.7243 9.67546L8.32442 9.69717C8.15874 9.69867 8.02565 9.8342 8.02715 9.99988C8.02865 10.1656 8.16417 10.2986 8.32985 10.2971L11.0297 10.2727ZM7.7898 7.21404L10.8168 10.1868L11.2372 9.75869L8.2102 6.78596L7.7898 7.21404Z" />
+			</g>
+
+			<g id="img-zoom">
+				<path xmlns="http://www.w3.org/2000/svg"
+					d="M9.3 8.6 6.2 5.7c.5-.6.8-1.3.8-2.2C7 1.6 5.4 0 3.5 0S0 1.6 0 3.5 1.6 7 3.5 7c.7 0 1.4-.2 1.9-.6l3.2 3 .7-.8zM1 3.5C1 2.1 2.1 1 3.5 1S6 2.1 6 3.5 4.9 6 3.5 6 1 4.9 1 3.5z" />
+			</g>
+
+			<g id="img-search-sm">
+				<path xmlns="http://www.w3.org/2000/svg"
+					d="M 8.160156 16.328125 C 9.839844 16.328125 11.390625 15.816406 12.6875 14.953125 L 17.375 19.640625 C 17.746094 20.007812 18.351562 20.007812 18.734375 19.640625 L 19.648438 18.726562 C 20.015625 18.359375 20.015625 17.753906 19.648438 17.367188 L 14.945312 12.695312 C 15.808594 11.398438 16.320312 9.847656 16.320312 8.167969 C 16.320312 3.671875 12.65625 0.0078125 8.160156 0.0078125 C 3.664062 0.0078125 0 3.671875 0 8.167969 C 0 12.664062 3.648438 16.328125 8.160156 16.328125 Z M 8.160156 3.207031 C 10.894531 3.207031 13.121094 5.433594 13.121094 8.167969 C 13.121094 10.902344 10.894531 13.128906 8.160156 13.128906 C 5.425781 13.128906 3.199219 10.902344 3.199219 8.167969 C 3.199219 5.433594 5.425781 3.207031 8.160156 3.207031 Z M 8.160156 3.207031" />
+			</g>
+		</defs>
+	</svg>
+
+	<div class="wrapper">
+
+		<header class="header-section">
+			<div class="header-top-bg">
+				<div class="header-top-block">
+					<div class="header-logo">
+						<a class="logo-link" href="/">
+							<img src="./img/Logo.png" alt="logo" class="logo-img">
+							<span class="logo-text">the<span class="text-colored">Ham</span>
+							</span>
+						</a>
+					</div>
+
+					<nav class="header-menu-block">
+						<ul class="header-menu">
+							<li class="menu-item">
+								<a class="menu-link" href="/">Home</a>
+							</li>
+							<li class="menu-item">
+								<a class="menu-link" href="">About</a>
+							</li>
+							<li class="menu-item">
+								<a class="menu-link" href="">Blog</a>
+							</li>
+							<li class="menu-item">
+								<a class="menu-link" href="">Skills</a>
+							</li>
+							<li class="menu-item">
+								<a class="menu-link" href="">Service</a>
+							</li>
+							<li class="menu-item">
+								<a class="menu-link" href="">Work</a>
+							</li>
+							<li class="menu-item">
+								<a class="menu-link" href="">Testimonial</a>
+							</li>
+							<li class="menu-item">
+								<button class="menu-link-icon" type="button">
+									<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" version="1.1"
+										preserveAspectRatio="xMinYMin">
+										<use xlink:href="#img-search-sm"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+			</div>
+			<div class="header-content-block">
+				<div class="header-content">
+					<span class="header-subtitle">The Ham is
+						<span class="subtitle-colored">Wordpress theme</span>
+					</span>
+					<h2 class="header-title">We are creative</h2>
+					<span class="header-description">Just Buy And Enjoy These Awesome Features</span>
+					<div class="header-button-box">
+						<a class="g-button button-left" href="">Explore now</ф>
+							<a class="g-button button-right" href="">Purchase now</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main-content">
+			<section class="trigger-section">
+				<div class="section-item">
+					<svg width="62" height="100" viewBox="0 0 62 100" xmlns="http://www.w3.org/2000/svg" version="1.1"
+						preserveAspectRatio="xMinYMin">
+						<use xlink:href="#img-shape-1"></use>
+					</svg>
+					<span class="item-title">Different theme option</span>
+				</div>
+				<div class="section-item">
+					<svg width="93" height="75" viewBox="0 0 93 75" xmlns="http://www.w3.org/2000/svg" version="1.1"
+						preserveAspectRatio="xMinYMin">
+						<use xlink:href="#img-shape-2"></use>
+					</svg>
+					<span class="item-title">Fully customizable</span>
+				</div>
+				<div class="section-item">
+					<svg width="62" height="100" viewBox="0 0 62 100" xmlns="http://www.w3.org/2000/svg" version="1.1"
+						preserveAspectRatio="xMinYMin">
+						<use xlink:href="#img-shape-3"></use>
+					</svg>
+					<span class="item-title">Unlimited support</span>
+				</div>
+				<div class="section-item">
+					<svg width="99" height="75" viewBox="0 0 93 75" xmlns="http://www.w3.org/2000/svg" version="1.1"
+						preserveAspectRatio="xMinYMin">
+						<use xlink:href="#img-shape-4"></use>
+					</svg>
+					<span class="item-title">Responsive all device</span>
+				</div>
+			</section>
+
+			<section class="services-section">
+				<h2 class="g-section-title">Our Services</h2>
+				<div class="section-main-block">
+					<div class="section-menu">
+						<ul class="menu-list">
+							<li class="menu-item menu-item-active" data-name="web-design">Web Design</li>
+							<li class="menu-item" data-name="graphic-design">Graphic Design</li>
+							<li class="menu-item" data-name="online-support">Online Support</li>
+							<li class="menu-item" data-name="app-design">App Design</li>
+							<li class="menu-item" data-name="online-marketing">Online Marketing</li>
+							<li class="menu-item" data-name="seo-service">Seo Service</li>
+						</ul>
+
+					</div>
+					<div class="section-tab active-content" data-name="web-design">
+						<img class="content-img" src="./img/our-services/img_1.jpg" alt="Web Design">
+						<p class="content-text">Web Design. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor
+							incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa
+							qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat
+							non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est
+							laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt
+							ut
+							labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+							officia
+							deserunt mollit anim id est laborum.
+						</p>
+					</div>
+
+					<div class="section-tab" data-name="graphic-design">
+						<img class="content-img" src="./img/our-services/img_2.jpg" alt="Graphic Design">
+						<p class="content-text">Graphic Design. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa
+							qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat
+							non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est
+							laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt
+							ut
+							labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+							officia
+							deserunt mollit anim id est laborum.
+						</p>
+					</div>
+
+					<div class="section-tab" data-name="online-support">
+						<img class="content-img" src="./img/our-services/img_3.jpg" alt="Online Support">
+						<p class="content-text">Online Support. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa
+							qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat
+							non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est
+							laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt
+							ut
+							labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+							officia
+							deserunt mollit anim id est laborum.
+						</p>
+					</div>
+
+					<div class="section-tab" data-name="app-design">
+						<img class="content-img" src="./img/our-services/img_4.jpg" alt="App Design">
+						<p class="content-text">App Design. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa
+							qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat
+							non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est
+							laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt
+							ut
+							labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+							officia
+							deserunt mollit anim id est laborum.
+						</p>
+					</div>
+
+					<div class="section-tab" data-name="online-marketing">
+						<img class="content-img" src="./img/our-services/img_5.jpg" alt="Online Marketing">
+						<p class="content-text">Online Marketing. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa
+							qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat
+							non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est
+							laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt
+							ut
+							labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+							officia
+							deserunt mollit anim id est laborum.
+						</p>
+					</div>
+
+					<div class="section-tab" data-name="seo-service">
+						<img class="content-img" src="./img/our-services/img_6.jpg" alt="Seo Service">
+						<p class="content-text">Seo Service. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa
+							qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat
+							non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est
+							laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt
+							ut
+							labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+							officia
+							deserunt mollit anim id est laborum.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="everything-ready">
+				<div class="section-content">
+					<p class="section-title">Everything is ready. just buy and install now</p>
+					<p class="section-subtitle">Smooth reliable, responsive ready, perfect portfolio, unique blog layout and many
+						many options for you</p>
+					<a class="g-button section-button" href="">Purchase now</a>
+				</div>
+			</section>
+
+			<section class="amazing-work">
+				<div class="section-content">
+					<h2 class="g-section-title">Our Amazing Work</h2>
+					<div class="section-menu">
+						<ul class="menu-list">
+							<li class="menu-item menu-item-active">All</li>
+							<li class="menu-item" data-name="graphic-design">Graphic Design</li>
+							<li class="menu-item" data-name="web-design">Web Design</li>
+							<li class="menu-item" data-name="landing-pages">Landing Pages</li>
+							<li class="menu-item" data-name="wordpress">Wordpress</li>
+						</ul>
+					</div>
+
+					<div class="image-gallery">
+						<div class="gallery-item" data-name="graphic-design">
+							<img class="item-img" src="./img/amazing-work/graphic-design/image_01.jpg" alt="Business Card">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Business Card</span>
+								<span class="category">Graphic Design</span>
+							</div>
+						</div>
+
+						<div class="gallery-item" data-name="graphic-design">
+							<img class="item-img" src="./img/amazing-work/graphic-design/image_02.jpg" alt="Reason Company">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Reason Company</span>
+								<span class="category">Graphic Design</span>
+							</div>
+						</div>
+
+						<div class="gallery-item" data-name="graphic-design">
+							<img class="item-img" src="./img/amazing-work/graphic-design/image_03.jpg" alt="Medical Flyer">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Medical Flyer</span>
+								<span class="category">Graphic Design</span>
+							</div>
+						</div>
+
+						<div class="gallery-item hidden" data-name="graphic-design">
+							<img class="item-img" src="./img/amazing-work/graphic-design/image_04.jpg" alt="Cookbook">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Cookbook</span>
+								<span class="category">Graphic Design</span>
+							</div>
+						</div>
+
+						<div class="gallery-item hidden" data-name="graphic-design">
+							<img class="item-img" src="./img/amazing-work/graphic-design/image_05.jpg" alt="Coffee Cup">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Coffee Cup</span>
+								<span class="category">Graphic Design</span>
+							</div>
+						</div>
+
+						<div class="gallery-item hidden" data-name="graphic-design">
+							<img class="item-img" src="./img/amazing-work/graphic-design/image_06.jpg" alt="DVD design">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">DVD design</span>
+								<span class="category">Graphic Design</span>
+							</div>
+						</div>
+
+						<div class="gallery-item" data-name="web-design">
+							<img class="item-img" src="./img/amazing-work/web-design/image_01.jpg" alt="Ruby on Rails">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Ruby on Rails</span>
+								<span class="category">Web Design</span>
+							</div>
+						</div>
+
+						<div class="gallery-item" data-name="web-design">
+							<img class="item-img" src="./img/amazing-work/web-design/image_02.jpg" alt="Book & Travel">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Book & Travel</span>
+								<span class="category">Web Design</span>
+							</div>
+						</div>
+
+						<div class="gallery-item" data-name="web-design">
+							<img class="item-img" src="./img/amazing-work/web-design/image_03.jpg" alt="Creativo Arquitectos">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Creativo Arquitectos</span>
+								<span class="category">Web Design</span>
+							</div>
+						</div>
+
+						<div class="gallery-item hidden" data-name="web-design">
+							<img class="item-img" src="./img/amazing-work/web-design/image_04.jpg" alt="Ideas in Shape">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Ideas in Shape</span>
+								<span class="category">Web Design</span>
+							</div>
+						</div>
+
+						<div class="gallery-item hidden" data-name="web-design">
+							<img class="item-img" src="./img/amazing-work/web-design/image_05.jpg" alt="Color Matters">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Color Matters</span>
+								<span class="category">Web Design</span>
+							</div>
+						</div>
+
+						<div class="gallery-item hidden" data-name="web-design">
+							<img class="item-img" src="./img/amazing-work/web-design/image_06.jpg" alt="Ideas to Life">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Ideas to Life</span>
+								<span class="category">Web Design</span>
+							</div>
+						</div>
+
+						<div class="gallery-item" data-name="landing-pages">
+							<img class="item-img" src="./img/amazing-work/landing-pages/image_01.jpg" alt="Barber">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Barber</span>
+								<span class="category">Landing Pages</span>
+							</div>
+						</div>
+
+						<div class="gallery-item" data-name="landing-pages">
+							<img class="item-img" src="./img/amazing-work/landing-pages/image_02.jpg" alt="Coffee">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Coffee</span>
+								<span class="category">Landing Pages</span>
+							</div>
+						</div>
+
+						<div class="gallery-item" data-name="landing-pages">
+							<img class="item-img" src="./img/amazing-work/landing-pages/image_03.jpg" alt="Publishing Company">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Publishing Company</span>
+								<span class="category">Landing Pages</span>
+							</div>
+						</div>
+
+						<div class="gallery-item hidden" data-name="landing-pages">
+							<img class="item-img" src="./img/amazing-work/landing-pages/image_04.jpg" alt="Author">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Author</span>
+								<span class="category">Landing Pages</span>
+							</div>
+						</div>
+
+						<div class="gallery-item hidden" data-name="landing-pages">
+							<img class="item-img" src="./img/amazing-work/landing-pages/image_05.jpg" alt="Educature">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Educature</span>
+								<span class="category">Landing Pages</span>
+							</div>
+						</div>
+
+						<div class="gallery-item hidden" data-name="landing-pages">
+							<img class="item-img" src="./img/amazing-work/landing-pages/image_06.jpg" alt="Virtual Assistant">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Virtual Assistant</span>
+								<span class="category">Landing Pages</span>
+							</div>
+						</div>
+
+						<div class="gallery-item" data-name="wordpress">
+							<img class="item-img" src="./img/amazing-work/wordpress/image_01.jpg" alt="Kurigram">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Kurigram</span>
+								<span class="category">Wordpress</span>
+							</div>
+						</div>
+
+						<div class="gallery-item" data-name="wordpress">
+							<img class="item-img" src="./img/amazing-work/wordpress/image_02.jpg" alt="Hazel">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Hazel</span>
+								<span class="category">Wordpress</span>
+							</div>
+						</div>
+
+						<div class="gallery-item" data-name="wordpress">
+							<img class="item-img" src="./img/amazing-work/wordpress/image_03.jpg" alt="Merimag">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Merimag</span>
+								<span class="category">Wordpress</span>
+							</div>
+						</div>
+
+						<div class="gallery-item hidden" data-name="wordpress">
+							<img class="item-img" src="./img/amazing-work/wordpress/image_04.jpg" alt="Jardinier">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Jardinier</span>
+								<span class="category">Wordpress</span>
+							</div>
+						</div>
+
+						<div class="gallery-item hidden" data-name="wordpress">
+							<img class="item-img" src="./img/amazing-work/wordpress/image_05.jpg" alt="Medic Theme">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Medic Theme</span>
+								<span class="category">Wordpress</span>
+							</div>
+						</div>
+
+						<div class="gallery-item hidden" data-name="wordpress">
+							<img class="item-img" src="./img/amazing-work/wordpress/image_06.jpg" alt="Webona">
+							<div class="item-content">
+								<div class="link-img-box">
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-shape-link-1"></use>
+											</svg>
+										</div>
+									</a>
+									<a class="item-link" href="">
+										<div class="link-image">
+											<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+												preserveAspectRatio="xMinYMin">
+												<use xlink:href="#img-link-2"></use>
+											</svg>
+										</div>
+									</a>
+								</div>
+								<span class="title">Webona</span>
+								<span class="category">Wordpress</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="loader" id="loader"></div>
+					<button class="g-gallery-button content-gallery-button" id="load-more-btn" type="button">
+						<span class="g-button-text">Load More</span>
+					</button>
+
+				</div>
+			</section>
+
+			<section class="breaking-news">
+				<div class="section-content">
+					<h2 class="g-section-title">Breaking News</h2>
+					<div class="image-gallery">
+
+						<div class="gallery-item">
+							<a class="gallery-item-link" href="">
+								<div class="item-box">
+									<img src="./img/breaking-news/item_01.jpg" alt="item image 1">
+									<p class="title">Amazing Blog Post</p>
+									<div class="item-links-box">
+										<span class="author">By admin</span>
+										<span class="comments">2 comment</span>
+									</div>
+								</div>
+								<div class="date-box">
+									<span class="day">12</span>
+									<span class="month">Feb</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="gallery-item">
+							<a class="gallery-item-link" href="">
+								<div class="item-box">
+									<img src="./img/breaking-news/item_02.jpg" alt="item image 2">
+									<p class="title">Amazing Blog Post</p>
+									<div class="item-links-box">
+										<span class="author">By admin</span>
+										<span class="comments">2 comment</span>
+									</div>
+								</div>
+								<div class="date-box">
+									<span class="day">12</span>
+									<span class="month">Feb</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="gallery-item">
+							<a class="gallery-item-link" href="">
+								<div class="item-box">
+									<img src="./img/breaking-news/item_03.jpg" alt="item image 3">
+									<p class="title">Amazing Blog Post</p>
+									<div class="item-links-box">
+										<span class="author">By admin</span>
+										<span class="comments">2 comment</span>
+									</div>
+								</div>
+								<div class="date-box">
+									<span class="day">12</span>
+									<span class="month">Feb</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="gallery-item">
+							<a class="gallery-item-link" href="">
+								<div class="item-box">
+									<img src="./img/breaking-news/item_04.jpg" alt="item image 4">
+									<p class="title">Amazing Blog Post</p>
+									<div class="item-links-box">
+										<span class="author">By admin</span>
+										<span class="comments">2 comment</span>
+									</div>
+								</div>
+								<div class="date-box">
+									<span class="day">12</span>
+									<span class="month">Feb</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="gallery-item">
+							<a class="gallery-item-link" href="">
+								<div class="item-box">
+									<img src="./img/breaking-news/item_05.jpg" alt="item image 5">
+									<p class="title">Amazing Blog Post</p>
+									<div class="item-links-box">
+										<span class="author">By admin</span>
+										<span class="comments">2 comment</span>
+									</div>
+								</div>
+								<div class="date-box">
+									<span class="day">12</span>
+									<span class="month">Feb</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="gallery-item">
+							<a class="gallery-item-link" href="">
+								<div class="item-box">
+									<img src="./img/breaking-news/item_06.jpg" alt="item image 6">
+									<p class="title">Amazing Blog Post</p>
+									<div class="item-links-box">
+										<span class="author">By admin</span>
+										<span class="comments">2 comment</span>
+									</div>
+								</div>
+								<div class="date-box">
+									<span class="day">12</span>
+									<span class="month">Feb</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="gallery-item">
+							<a class="gallery-item-link" href="">
+								<div class="item-box">
+									<img src="./img/breaking-news/item_07.jpg" alt="item image 7">
+									<p class="title">Amazing Blog Post</p>
+									<div class="item-links-box">
+										<span class="author">By admin</span>
+										<span class="comments">2 comment</span>
+									</div>
+								</div>
+								<div class="date-box">
+									<span class="day">12</span>
+									<span class="month">Feb</span>
+								</div>
+							</a>
+						</div>
+
+						<a class="gallery-item-link" href="">
+							<div class="gallery-item">
+								<div class="item-box">
+									<img src="./img/breaking-news/item_08.jpg" alt="item image 8">
+									<p class="title">Amazing Blog Post</p>
+									<div class="item-links-box">
+										<span class="author">By admin</span>
+										<span class="comments">2 comment</span>
+									</div>
+								</div>
+								<div class="date-box">
+									<span class="day">12</span>
+									<span class="month">Feb</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="what-people-say">
+				<div class="section-content">
+					<h2 class="g-section-title content-title">What People Say About theHam</h2>
+
+					<div class="swiper mySwiper2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<svg width="44" height="31" viewBox="0 0 44 31" xmlns="http://www.w3.org/2000/svg" version="1.1"
+									preserveAspectRatio="xMinYMin">
+									<use xlink:href="#img-combined-shape-2474"></use>
+								</svg>
+								<p class="content-text">
+									Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis
+									massa.
+									Morbi
+									pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio
+									nisi quis
+									massa. Morbi pulvinar odio eget aliquam facilisis.
+								</p>
+								<p class="photo-title">Elon Musk</p>
+								<p class="photo-subtitle">Tesla CEO</p>
+								<div class="main-photo">
+									<img class="main-img-photo" src="./img/what-people-say/main-img-1.png" alt="main-img-1">
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<svg width="44" height="31" viewBox="0 0 44 31" xmlns="http://www.w3.org/2000/svg" version="1.1"
+									preserveAspectRatio="xMinYMin">
+									<use xlink:href="#img-combined-shape-2474"></use>
+								</svg>
+								<p class="content-text">
+									Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis
+									massa.
+									Morbi
+									pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio
+									nisi quis
+									massa. Morbi pulvinar odio eget aliquam facilisis.
+								</p>
+								<p class="photo-title">Jeff Bezos</p>
+								<p class="photo-subtitle">Amazon CEO</p>
+								<div class="main-photo">
+									<img class="main-img-photo" src="./img/what-people-say/main-img-2.png" alt="main-img-2">
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<svg width="44" height="31" viewBox="0 0 44 31" xmlns="http://www.w3.org/2000/svg" version="1.1"
+									preserveAspectRatio="xMinYMin">
+									<use xlink:href="#img-combined-shape-2474"></use>
+								</svg>
+								<p class="content-text">
+									Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis
+									massa.
+									Morbi
+									pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio
+									nisi quis
+									massa. Morbi pulvinar odio eget aliquam facilisis.
+								</p>
+								<p class="photo-title">Tim Cook</p>
+								<p class="photo-subtitle">Apple CEO</p>
+								<div class="main-photo">
+									<img class="main-img-photo" src="./img/what-people-say/main-img-3.png" alt="main-img-3">
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<svg width="44" height="31" viewBox="0 0 44 31" xmlns="http://www.w3.org/2000/svg" version="1.1"
+									preserveAspectRatio="xMinYMin">
+									<use xlink:href="#img-combined-shape-2474"></use>
+								</svg>
+								<p class="content-text">
+									Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis
+									massa.
+									Morbi
+									pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio
+									nisi quis
+									massa. Morbi pulvinar odio eget aliquam facilisis.
+								</p>
+								<p class="photo-title">Bill Gates</p>
+								<p class="photo-subtitle">Microsoft CEO</p>
+								<div class="main-photo">
+									<img class="main-img-photo" src="./img/what-people-say/main-img-4.png" alt="main-img-4">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div thumbsSlider="" class="swiper mySwiper swiper-box">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide" style="width: 90px">
+								<div class="img-box">
+									<img class="small-img" src="./img/what-people-say/small-img-1.png" alt="small-img-1">
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 90px">
+								<div class="img-box selected">
+									<img class="small-img" src="./img/what-people-say/small-img-2.png" alt="small-img-2">
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 90px">
+								<div class="img-box">
+									<img class="small-img" src="./img/what-people-say/small-img-3.png" alt="small-img-3">
+								</div>
+							</div>
+
+							<div class="swiper-slide" style="width: 90px">
+								<div class="img-box">
+									<img class="small-img" src="./img/what-people-say/small-img-4.png" alt="small-img-4">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next swiper-button"></div>
+						<div class="swiper-button-prev swiper-button"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="gallery-best-images">
+				<div class="section-content">
+					<h2 class="g-section-title">Gallery of best images</h2>
+					<div class="section-gallery">
+
+						<div class="gallery-item">
+							<img class="gallery-img" src="./img/gallery-of-best-images/image_01.jpg" alt="image 1">
+							<div class="item-button-box">
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-zoom"></use>
+										</svg>
+
+									</div>
+								</a>
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-expand"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="gallery-item">
+							<img class="gallery-img" src="./img/gallery-of-best-images/image_02.jpg" alt="image 2">
+							<div class="item-button-box">
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-zoom"></use>
+										</svg>
+									</div>
+								</a>
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-expand"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="gallery-item">
+							<img class="gallery-img" src="./img/gallery-of-best-images/image_03.jpg" alt="image 3">
+							<div class="item-button-box">
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-zoom"></use>
+										</svg>
+									</div>
+								</a>
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-expand"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="gallery-item">
+							<img class="gallery-img" src="./img/gallery-of-best-images/image_04.jpg" alt="image 4">
+							<div class="item-button-box">
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-zoom"></use>
+										</svg>
+									</div>
+								</a>
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-expand"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="gallery-item">
+							<img class="gallery-img" src="./img/gallery-of-best-images/image_05.jpg" alt="image 5">
+							<div class="item-button-box">
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-zoom"></use>
+										</svg>
+									</div>
+								</a>
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-expand"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="gallery-item">
+							<img class="gallery-img" src="./img/gallery-of-best-images/image_06.jpg" alt="image 6">
+							<div class="item-button-box">
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-zoom"></use>
+										</svg>
+									</div>
+								</a>
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-expand"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="gallery-in-item">
+							<div class="small-gallery">
+								<div class="small-gallery-item">
+									<img class="small-gallery-img" src="./img/gallery-of-best-images/gallery-in-gallery/image_01.jpg"
+										alt="small image 1">
+									<div class="item-button-box">
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-zoom"></use>
+												</svg>
+											</div>
+										</a>
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-expand"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="small-gallery-item">
+									<img class="small-gallery-img" src="./img/gallery-of-best-images/gallery-in-gallery/image_02.jpg"
+										alt="small image 2">
+									<div class="item-button-box">
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-zoom"></use>
+												</svg>
+											</div>
+										</a>
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-expand"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="small-gallery-item">
+									<img class="small-gallery-img" src="./img/gallery-of-best-images/gallery-in-gallery/image_03.jpg"
+										alt="small image 3">
+									<div class="item-button-box">
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-zoom"></use>
+												</svg>
+											</div>
+										</a>
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-expand"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="small-gallery-item">
+									<img class="small-gallery-img" src="./img/gallery-of-best-images/gallery-in-gallery/image_04.jpg"
+										alt="small image 4">
+									<div class="item-button-box">
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-zoom"></use>
+												</svg>
+											</div>
+										</a>
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-expand"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="small-gallery-item">
+									<img class="small-gallery-img" src="./img/gallery-of-best-images/gallery-in-gallery/image_05.jpg"
+										alt="small image 5">
+									<div class="item-button-box">
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-zoom"></use>
+												</svg>
+											</div>
+										</a>
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-expand"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="small-gallery-item">
+									<img class="small-gallery-img" src="./img/gallery-of-best-images/gallery-in-gallery/image_06.jpg"
+										alt="small image 6">
+									<div class="item-button-box">
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-zoom"></use>
+												</svg>
+											</div>
+										</a>
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-expand"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="small-gallery-item">
+									<img class="small-gallery-img" src="./img/gallery-of-best-images/gallery-in-gallery/image_07.jpg"
+										alt="small image 7">
+									<div class="item-button-box">
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-zoom"></use>
+												</svg>
+											</div>
+										</a>
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-expand"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="small-gallery-item">
+									<img class="small-gallery-img" src="./img/gallery-of-best-images/gallery-in-gallery/image_08.jpg"
+										alt="small image 8">
+									<div class="item-button-box">
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-zoom"></use>
+												</svg>
+											</div>
+										</a>
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-expand"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="small-gallery-item">
+									<img class="small-gallery-img" src="./img/gallery-of-best-images/gallery-in-gallery/image_09.jpg"
+										alt="small image 9">
+									<div class="item-button-box">
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-zoom"></use>
+												</svg>
+											</div>
+										</a>
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-expand"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="small-gallery-item">
+									<img class="small-gallery-img" src="./img/gallery-of-best-images/gallery-in-gallery/image_10.jpg"
+										alt="small image 10">
+									<div class="item-button-box">
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-zoom"></use>
+												</svg>
+											</div>
+										</a>
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-expand"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="small-gallery-item">
+									<img class="small-gallery-img" src="./img/gallery-of-best-images/gallery-in-gallery/image_11.jpg"
+										alt="small image 11">
+									<div class="item-button-box">
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-zoom"></use>
+												</svg>
+											</div>
+										</a>
+										<a class="item-button-link" href="">
+											<div class="item-button">
+												<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+													preserveAspectRatio="xMinYMin">
+													<use xlink:href="#img-expand"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="gallery-item">
+							<img class="gallery-img" src="./img/gallery-of-best-images/image_07.jpg" alt="image 7">
+							<div class="item-button-box">
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-zoom"></use>
+										</svg>
+									</div>
+								</a>
+								<a class="item-button-link" href="">
+									<div class="item-button">
+										<svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg" version="1.1"
+											preserveAspectRatio="xMinYMin">
+											<use xlink:href="#img-expand"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<button class="g-gallery-button content-gallery-button" type="button">
+						<span class="g-button-text">Load More</span>
+					</button>
+
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<span class="copyright">&copy; Copyright 2015 <a class="footer-link" href="">theHam</a> | All Rights
+				Reserved</span>
+		</footer>
+
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
