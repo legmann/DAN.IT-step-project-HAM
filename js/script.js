@@ -44,8 +44,26 @@ amazingWorkTabsMenu.addEventListener('click', (event) => {
   }
 });
 
-const loadMoreButton = document.querySelector('#load-more-btn');
-const loader = document.querySelector('#loader');
+const sectionContent = document.querySelector('.amazing-work .section-content');
+
+const loader = document.createElement('div');
+loader.classList.add('loader');
+loader.setAttribute('id', 'loader');
+
+const loadMoreButton = document.createElement('button');
+loadMoreButton.classList.add('g-gallery-button', 'content-gallery-button');
+loadMoreButton.setAttribute('id', 'load-more-btn');
+loadMoreButton.setAttribute('type', 'button');
+
+const buttonText = document.createElement('span');
+buttonText.classList.add('g-button-text');
+buttonText.textContent = 'Load More';
+
+loadMoreButton.insertAdjacentElement("beforeEnd", buttonText);
+
+sectionContent.insertAdjacentElement("beforeEnd", loader);
+sectionContent.insertAdjacentElement("beforeEnd", loadMoreButton);
+
 
 loadMoreButton.addEventListener('click', () => {
   loader.style.display = 'block';
