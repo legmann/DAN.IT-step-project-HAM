@@ -68,19 +68,134 @@ sectionContent.insertAdjacentElement("beforeEnd", loadMoreButton);
 loadMoreButton.addEventListener('click', () => {
   loader.style.display = 'block';
 
-  const hiddenGalleryItems = document.querySelectorAll('.amazing-work .gallery-item.hidden');
+  const imageGallery = document.querySelector('.amazing-work  .image-gallery');
+  const imageGalleryItems = [
+    {
+      'data-name': 'graphic-design',
+      'item-img': 'graphic-design/image_04.jpg',
+      'title-alt': 'Cookbook',
+      category: 'Graphic Design'
+    },
+
+    {
+      'data-name': 'graphic-design',
+      'item-img': 'graphic-design/image_05.jpg',
+      'title-alt': 'Coffee Cup',
+      category: 'Graphic Design'
+    },
+
+    {
+      'data-name': 'graphic-design',
+      'item-img': 'graphic-design/image_06.jpg',
+      'title-alt': 'DVD design',
+      category: 'Graphic Design'
+    },
+
+    {
+      'data-name': 'web-design',
+      'item-img': 'web-design/image_04.jpg',
+      'title-alt': 'Ideas in Shape',
+      category: 'Web Design'
+    },
+
+    {
+      'data-name': 'web-design',
+      'item-img': 'web-design/image_05.jpg',
+      'title-alt': 'Color Matters',
+      category: 'Web Design'
+    },
+
+    {
+      'data-name': 'web-design',
+      'item-img': 'web-design/image_06.jpg',
+      'title-alt': 'Ideas to Life',
+      category: 'Web Design'
+    },
+
+    {
+      'data-name': 'landing-pages',
+      'item-img': 'landing-pages/image_04.jpg',
+      'title-alt': 'Author',
+      category: 'Landing Pages'
+    },
+
+    {
+      'data-name': 'landing-pages',
+      'item-img': 'landing-pages/image_05.jpg',
+      'title-alt': 'Educature',
+      category: 'Landing Pages'
+    },
+
+    {
+      'data-name': 'landing-pages',
+      'item-img': 'landing-pages/image_06.jpg',
+      'title-alt': 'Virtual Assistant',
+      category: 'Landing Pages'
+    },
+
+    {
+      'data-name': 'wordpress',
+      'item-img': 'wordpress/image_04.jpg',
+      'title-alt': 'Jardinier',
+      category: 'Wordpress'
+    },
+
+    {
+      'data-name': 'wordpress',
+      'item-img': 'wordpress/image_05.jpg',
+      'title-alt': 'Medic Theme',
+      category: 'Wordpress'
+    },
+
+    {
+      'data-name': 'wordpress',
+      'item-img': 'wordpress/image_06.jpg',
+      'title-alt': 'Webona',
+      category: 'Wordpress'
+    }
+
+  ];
+
 
   setTimeout(() => {
 
     for (let i = 0; i < 12; i++) {
-      hiddenGalleryItems[i].classList.remove('hidden');
+
+      imageGallery.insertAdjacentHTML("beforeEnd", `<div class="gallery-item" data-name="${imageGalleryItems[i]['data-name']}">
+      <img class="item-img" src="./img/amazing-work/${imageGalleryItems[i]['item-img']}" alt="${imageGalleryItems[i]['title-alt']}">
+      <div class="item-content">
+        <div class="link-img-box">
+          <a class="item-link" href="">
+            <div class="link-image">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                preserveAspectRatio="xMinYMin">
+                <use xlink:href="#img-shape-link-1"></use>
+              </svg>
+            </div>
+          </a>
+          <a class="item-link" href="">
+            <div class="link-image">
+              <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                preserveAspectRatio="xMinYMin">
+                <use xlink:href="#img-link-2"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <span class="title">${imageGalleryItems[i]['title-alt']}</span>
+        <span class="category">${imageGalleryItems[i]['category']}</span>
+      </div>
+    </div>`);
+
     }
+
     loader.style.display = 'none';
-    if (hiddenGalleryItems.length === 12) {
-      loadMoreButton.style.display = 'none';
-    }
+    loadMoreButton.style.display = 'none';
+
   }, 2000);
 });
+
+
 
 
 
